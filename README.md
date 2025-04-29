@@ -1,14 +1,14 @@
 # Deploying Netflix Clone using DevSecOps Approach
-![Netflix-Project-Thumbnail](https://github.com/vijaygiduthuri/Netflix/assets/125960600/0a36313b-1ee8-4150-8541-fe9786fa94aa)
+![Netflix-Project-Thumbnail](https://github.com/alladakavya/Netflix/assets/125960600/0a36313b-1ee8-4150-8541-fe9786fa94aa)
 
 # Medium Blog Link:
 
-https://medium.com/@vijaygiduthuri67/deploying-netflix-clone-on-aws-using-devsecops-approach-f299c7375dbc
+https://medium.com/@alladakavya67/deploying-netflix-clone-on-aws-using-devsecops-approach-f299c7375dbc
 
 
 
 # **Install Jenkins on Ubuntu:**
-![image](https://github.com/vijaygiduthuri/Netflix/assets/125960600/69e812bd-d639-409d-874b-64f501e35027)
+![image](https://github.com/alladakavya/Netflix/assets/125960600/69e812bd-d639-409d-874b-64f501e35027)
 
 ```
 #!/bin/bash
@@ -27,7 +27,7 @@ sudo systemctl status jenkins
 ```
 
 # **Install Docker on Ubuntu:**
-![image](https://github.com/vijaygiduthuri/Netflix/assets/125960600/0f93c2d9-a9b3-4f76-ac25-81f4e384de55)
+![image](https://github.com/alladakavya/Netflix/assets/125960600/0f93c2d9-a9b3-4f76-ac25-81f4e384de55)
 
 ```
 # Add Docker's official GPG key:
@@ -49,7 +49,7 @@ sudo systemctl status docker
 ```
 
 # **Install Docker Scout:**
-![image](https://github.com/vijaygiduthuri/Netflix/assets/125960600/840d499f-4a45-4571-b361-c1a0598de793)
+![image](https://github.com/alladakavya/Netflix/assets/125960600/840d499f-4a45-4571-b361-c1a0598de793)
 
 ```
 docker login       `Give Dockerhub credentials here`
@@ -71,7 +71,7 @@ pipeline {
         }
         stage ("Git Checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/vijaygiduthuri/Netflix-Clone.git'
+                git branch: 'main', url: 'https://github.com/alladakavya/Netflix-Clone.git'
             }
         }
         stage('OWASP FS SCAN') {
@@ -89,8 +89,8 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh "docker tag netflix vijaygiduthuri/netflix:latest"
-                        sh "docker push vijaygiduthuri/netflix:latest"
+                        sh "docker tag netflix alladakavya/netflix:latest"
+                        sh "docker push alladakavya/netflix:latest"
                     }
                 }
             }
@@ -99,9 +99,9 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh 'docker-scout quickview vijaygiduthuri/netflix:latest'
-                        sh 'docker-scout cves vijaygiduthuri/netflix:latest'
-                        sh 'docker-scout recommendations vijaygiduthuri/netflix:latest'
+                        sh 'docker-scout quickview alladakavya/netflix:latest'
+                        sh 'docker-scout cves alladakavya/netflix:latest'
+                        sh 'docker-scout recommendations alladakavya/netflix:latest'
                     }
                 }
             }

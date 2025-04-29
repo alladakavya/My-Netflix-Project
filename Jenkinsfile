@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/vijaygiduthuri/Netflix.git'
+                git branch: 'main', url: 'https://github.com/alladakavya/Netflix.git'
             }
         }
         stage('Build Docker Image') {
