@@ -1,5 +1,6 @@
 # Deploying Netflix Clone using DevSecOps Approach
-![Netflix-Project-Thumbnail](https://github.com/alladakavya/Netflix/assets/125960600/0a36313b-1ee8-4150-8541-fe9786fa94aa)
+![Netflix-Project-Thumbnail](![image](https://github.com/user-attachments/assets/53bd7c2d-0462-47b1-8985-35b83d776869)
+)
 
 # Medium Blog Link:
 
