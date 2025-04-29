@@ -1,11 +1,6 @@
 # Deploying Netflix Clone using DevSecOps Approach
-![Netflix-Project-Thumbnail](https://github.com/alladakavya/Netflix/assets/125960600/0a36313b-1ee8-4150-8541-fe9786fa94aa)
 
-# Medium Blog Link:
-
-https://medium.com/@alladakavya67/deploying-netflix-clone-on-aws-using-devsecops-approach-f299c7375dbc
-
-
+![Deployment Pipeline](images/deployment-pipeline.png)
 
 # **Install Jenkins on Ubuntu:**
 ![image](https://github.com/alladakavya/Netflix/assets/125960600/69e812bd-d639-409d-874b-64f501e35027)
