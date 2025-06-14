@@ -1,6 +1,5 @@
 # Deploying Netflix Clone using DevSecOps Approach
 
-![Project Thumbnail](https://github.com/user-attachments/assets/53bd7c2d-0462-47b1-8985-35b83d776869)  
 ![Deployment Pipeline](images/deployment-pipeline.png)
 
 # **Install Jenkins on Ubuntu:**
